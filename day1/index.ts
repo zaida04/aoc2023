@@ -1,4 +1,4 @@
-import { loadInput } from "../util/load";
+import { run } from "../util/load";
 
 const nums = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 const numsIndexes = Object.keys(nums);
@@ -43,5 +43,5 @@ function strToNum(line: string) {
     return replaced;
 }
 
-console.log(day1p1(loadInput(__dirname, "input.txt")));
-console.log(day1p2(loadInput(__dirname, "input.txt")));
+run(day1p1);
+run(day1p2);
